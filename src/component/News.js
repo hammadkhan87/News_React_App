@@ -97,7 +97,7 @@ fetchMoreData = async ()=>{
          <InfiniteScroll
           dataLength={this.state.articles?.length}
           next={this.fetchMoreData}
-          hasMore={this.state.articles.length !==this.totalResults}
+          hasMore={this.state.articles?.length !==this.totalResults}
           loader={<Spiner/>}
 
         >
